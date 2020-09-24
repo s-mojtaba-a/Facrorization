@@ -2,9 +2,11 @@
 using namespace std;
 typedef long long ll;
 
-void prime_factorization(int n, vector<int> &s)
+
+template<typename T>
+void prime_factorization(T n, vector<T> &s)
 {
-    for (int i = 2; i * i <= n; i++)
+    for (T i = 2; i * i <= n; i++)
     {
         if (n % i == 0)
         {
@@ -17,9 +19,11 @@ void prime_factorization(int n, vector<int> &s)
         s.emplace_back(n);
 }
 
-void factors(int n, vector<int> &s)
+
+template<typename T>
+void factors(T n, vector<T> &s)
 {
-    for (int i = 1; i * i <= n; i++)
+    for (T i = 1; i * i <= n; i++)
         if (n % i == 0)
         {
             s.emplace_back(i);
