@@ -50,4 +50,5 @@ def factor(n):
             factors.append(i)
             if n//i != i :
                 factors.append(n//i)
+        i+=1
 
