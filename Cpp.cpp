@@ -37,3 +37,17 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(0);
 }
+
+
+
+######## python 3.8.2 ########
+
+factors=[]
+def factor(n):
+    i=1
+    while i*i<=n :
+        if n%i==0:
+            factors.append(i)
+            if n//i != i :
+                factors.append(n//i)
+
