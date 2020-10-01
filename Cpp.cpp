@@ -52,3 +52,13 @@ def factor(n):
                 factors.append(n//i)
         i+=1
 
+primes={}
+def prime_factors(n):
+    i=2
+    while i*i<=n :
+        if n%i==0 :
+            primes[i]=0
+            while n%i==0:
+                primes[i]+=1
+                n/=i
+        i+=1
